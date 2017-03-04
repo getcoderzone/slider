@@ -1,0 +1,106 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?25529653');
+  src: url('../font/fontello.eot?25529653#iefix') format('embedded-opentype'),
+	   url('../font/fontello.woff?25529653') format('woff'),
+	   url('../font/fontello.ttf?25529653') format('truetype'),
+	   url('../font/fontello.svg?25529653#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gcz-slider{
+	position:relative;
+}
+.gcz-theme .item img{
+	height:600px;
+}
+.gcz-theme .owl-nav {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+.gcz-theme .owl-nav .owl-prev{
+	left: 5px;
+	
+}
+.gcz-theme .owl-nav .owl-next{
+	right: 5px;
+}
+.gcz-theme .owl-nav div{
+  bottom: 0;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize;
+  top: 0;
+}
+
+.gcz-theme .owl-nav [class*='owl-']  i.icon-left-open-big, .gcz-theme .owl-nav [class*='owl-']  i.icon-right-open-big{
+	background: #d6d6d6 none repeat scroll 0 0;
+	border-radius: 90%;
+	-moz-border-radius: 90%;
+	-webkit-border-radius: 90%;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 30px;
+	height: 44px;
+	line-height: 45px;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+	width: 45px;
+	opacity: 0 !important;
+}
+.gcz-theme .owl-nav [class*='owl-'] i.icon-left-open-big:hover, .gcz-theme .owl-nav [class*='owl-'] i.icon-right-open-big:hover  {
+	background: #869791;
+	color: #FFF;
+	text-decoration: none; 
+	
+}
+.gcz-theme .owl-nav .disabled {
+	opacity: 0.5;
+	cursor: default; 
+}
+.gcz-theme:hover .owl-nav [class*='owl-']  i.icon-left-open-big, .gcz-theme:hover .owl-nav [class*='owl-']  i.icon-right-open-big{
+	opacity: 1 !important;
+	 transition: background-color 250ms linear 0s, color 250ms linear 0s, opacity 250ms linear 0s;
+}
+
+
+.gcz-theme .owl-nav.disabled + .owl-dots {
+	margin-top: 10px; 
+}
+
+.gcz-theme .owl-dots {
+  bottom: 10px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.gcz-theme .owl-dots .owl-dot {
+	display: inline-block;
+	zoom: 1;
+	*display: inline; 
+}
+.gcz-theme .owl-dots .owl-dot span {
+  background: rgba(128, 128, 128, 0.2) none repeat scroll 0 0;
+  display: block;
+  height: 3px;
+  margin: 5px 8px;
+  transition: opacity 200ms ease 0s;
+  -webkit-backface-visibility: visible;
+  width: 60px;
+}
+
+.gcz-theme .owl-dots .owl-dot.active span, .gcz-theme .owl-dots .owl-dot:hover span {
+	background: rgba(128, 128, 128, 0.8) none repeat scroll 0 0;
+}
